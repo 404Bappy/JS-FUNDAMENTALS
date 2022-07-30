@@ -6,7 +6,7 @@ function turnonFan(){
     console.log('press the switch');
 }
 
-//Call Functio//
+//Call Function//
 
 turnonFan();
 
