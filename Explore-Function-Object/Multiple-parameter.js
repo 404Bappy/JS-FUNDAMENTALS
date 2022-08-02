@@ -9,4 +9,10 @@ var secondNumber = 47;
 var result = addTwoNumbers(firstNumber , secondNumber);
 console.log('result value: ', result);
 
-function
+function multiplyTwoNumbers(num1 , num2){
+    var result = num1 * num2;
+    return result;
+}
+
+var total = multiplyTwoNumbers(5, 100);
+console.log('total after multiplication', total);
