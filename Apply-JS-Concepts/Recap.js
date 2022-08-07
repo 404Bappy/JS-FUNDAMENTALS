@@ -13,3 +13,9 @@ var brothers = ['rofiq', 'jobbar', 'salam', 'kalam'];
 
  brothers.push('bappy');
  console.log(brothers);
+
+ brothers.pop();
+
+//  conditionals
+
+if
