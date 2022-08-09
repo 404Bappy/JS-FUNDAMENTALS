@@ -5,10 +5,10 @@
 // console.log(factorial);
 
 
-function factorial(number){
+function factorial(number) {
     let facto = 1;
-    for(let i = 1; i<=number; i++){
-        facto = facto * i ;
+    for (let i = 1; i <= number; i++) {
+        facto = facto * i;
     }
     return facto;
 }
