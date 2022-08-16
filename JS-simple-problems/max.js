@@ -1,7 +1,9 @@
 const business = 4950;
 const minister = 750;
 const army = 600;
-Compare with three
+
+// Compare with three
+
 if(business > minister && business > army){
     console.log("business is bigger");
 }
@@ -12,7 +14,7 @@ else{
     console.log("army is bigger");
 }
 
-var max= Math.max(business , minister , army);
-console.log('largest is :', max);
+// var max= Math.max(business , minister , army);
+// console.log('largest is :', max);
 
 
