@@ -6,8 +6,21 @@
 // 6th = 5th + 4th
 // 7th = 6th + 5th
 // nth = (n-1) + (n-2)
+
 const fibo = [0, 1]
 for(let i = 2; i<=10; i++){
 fibo[i] = fibo[i-1]+ fibo[i-2];
 }
 console.log(fibo);
+
+
+function fibonacciSeries(num){
+    const fibo = [0, 1];
+    for(let i =2; i <= num; i ++){
+        fibo[i] = fibo[i - 1]+ fibo[i -2];
+
+    }
+    return fibo;
+}
+const fiboSeries = fibonacciSeries(300);
+console.log(fiboSeries);
