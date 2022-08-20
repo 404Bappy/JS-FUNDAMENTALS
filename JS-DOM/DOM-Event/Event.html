@@ -10,8 +10,33 @@
 
 <body>
     <h1 onclick="console.log('This One Is Clicked')">This is Arafat Bappy</h1>
-    <!-- <button onclick="alert(10)">Click Here</button> -->
-    <button onclick="console.log('Hi !')">Click Here</button>
+    <!-- <button onclick="alert(10)">Click Here</button>
+    <button onclick="console.log('Hi !')">Click Here</button> -->
+
+
+    <button onclick="document.body.style.backgroundColor='yellow' ">Click Here To Make It Yellow</button>
+    <button onclick="makeRed()">Click Here To Make It Red</button>
+    <button id="my-blueButtonn">Click Here To Make It Blue</button>
+
+
+
+    <script>
+
+        function makeRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+
+        const blueButton = document.getElementById('my-blueButtonn');
+        blueButton.onclick = makeBlue;
+
+        function makeBlue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+
+    </script>
+
+
+
 </body>
 
 </html>
