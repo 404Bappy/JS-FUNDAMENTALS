@@ -24,10 +24,23 @@ greenButton.onclick = function () {
 //Handle by using add eventlistener
 
 const GreenYellow = document.getElementById('my-greenYellowButton');
-GreenYellow.addEventListener('click' , makeGreenYellow);
+GreenYellow.addEventListener('click', makeGreenYellow);
 
-function makeGreenYellow(){
+function makeGreenYellow() {
     document.body.style.backgroundColor = 'greenYellow';
 }
+
+//addEventListener
+
+const hotPink = document.getElementById('my-hotPinkButton');
+
+hotPink.addEventListener('click', function () {
+    document.body.style.backgroundColor = 'hotPink'
+})
+
+//Direct Shortcut addEventListener
+document.getElementById('my-IndigoButton').addEventListener('click', function () {
+    document.body.style.backgroundColor = 'indigo'
+})
 
 
