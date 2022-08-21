@@ -10,9 +10,11 @@
 
 <body>
     <p id="Clicking-method"></p>
+
+    <input id="NameUpdate" type="text">
+    <button id="makeUpdate">Updates</button>
+
     <button onclick="handleJustFunctionClick()">Just Function</button>
-
-
     <button id="DirectHandleClickEvent">Direct Add Event Listener</button>
 
 
@@ -28,6 +30,14 @@
             clickingMethod.innerText = 'Set by direct Add Event Listener'
 
         })
+
+        document.getElementById('makeUpdate').addEventListener('click', function () {
+            const Updating = document.getElementById('NameUpdate');
+
+            const clickingMethod = document.getElementById('Clicking-method');
+            clickingMethod.innerText = NameUpdate.value;
+        })
+
 
     </script>
 </body>
