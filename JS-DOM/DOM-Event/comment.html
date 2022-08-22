@@ -10,6 +10,56 @@
 
 <body>
     <h1>Comment Here !!!</h1>
+    <section>
+        <h4>Your Comments</h4>
+        <div id="Comment-Container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus commodi enim sunt in explicabo
+                blanditiis laudantium consequatur libero obcaecati delectus facere magnam id, ut eveniet inventore aut
+                non veritatis!</p>
+            <p>Quaerat dignissimos ex dicta sequi vel quam aperiam quasi autem, reprehenderit nostrum inventore, animi
+                veritatis aspernatur impedit similique ducimus sunt? Autem fuga fugit reprehenderit ut. Totam, commodi
+                eum? Amet, illo?</p>
+
+        </div>
+
+        <div>
+
+            <textarea name="" id="New-Comment" cols="60" rows="5"></textarea>
+            <br>
+            <button id="submit-comment">Post</button>
+        </div>
+
+    </section>
+
+
+
+
+    <script>
+
+        //Add button event Handler//
+        document.getElementById('submit-comment').addEventListener('click', function () {
+
+            //Get User Comment //
+            const commentText = document.getElementById('New-Comment');
+            //const userComment = commentText.value;
+
+
+            //Creat comment paragraph //
+
+            const newp = document.createElement('p');
+            newp.innerText = commentText.value;
+
+
+            //append the comment
+
+            const CommentContainer = document.getElementById('Comment-Container');
+            CommentContainer.appendChild(newp);
+
+            //clean The Comment Box//
+
+            commentText.value = ' ';
+        })
+    </script>
 </body>
 
 </html>
