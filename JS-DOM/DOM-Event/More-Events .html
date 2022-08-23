@@ -12,15 +12,27 @@
     <h2>More Events</h2>
     <section>
         <h3 id="secretInfo">Very very importent Secret information</h3>
-        <input type="text" placeholder="PLEASE TYPE DELETE">
+        <input id="Delete-confirm" type="text" placeholder="PLEASE TYPE DELETE">
         <button id="Delet-Btn" disabled>Delete</button>
     </section>
 
     <script>
         document.getElementById('Delet-Btn').addEventListener('click', function () {
             document.getElementById('secretInfo').style.display = 'none';
+        });
+        //Focus//
+        document.getElementById('Delete-confirm').addEventListener('focus', function () {
+            document.body.style.backgroundColor = 'lightcoral';
         })
+        document.getElementById('Delete-confirm').addEventListener('blur', function () {
+            document.body.style.backgroundColor = 'white';
+        });
+        //key Down
+        document.getElementById('Delete-confirm').addEventListener('keeydown', function () {
+            const deleteField = document.getElementById('delete-confirm');
+        });
+
     </script>
 </body>
-fgfgfgffhdfbf hdhgff
+
 </html>
